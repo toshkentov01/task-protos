@@ -40,9 +40,9 @@ message GetPostRequest {
 
 message UpdatePostRequest {
     int64 post_id = 1;
-    int64 user_id = 2;
+    string title = 2;
+    string body = 3;
 }
-
 message DeletePostRequest {
     int64 post_id = 1;
     int64 user_id = 2;
