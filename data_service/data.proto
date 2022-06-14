@@ -1,12 +1,12 @@
 syntax="proto3";
 
-package crud;
+package data;
 
-option go_package = "genproto/crud_service";
+option go_package = "genproto/data_service";
 
 import "google/protobuf/empty.proto";
 
-service CrudService {
+service DataService {
     rpc ListPosts(ListPostsRequest) returns (ListPostsResponse) {}
     rpc GetPost(GetPostRequest) returns (Post) {}
     rpc UpdatePost(UpdatePostRequest) returns (google.protobuf.Empty) {}
